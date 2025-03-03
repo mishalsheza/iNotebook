@@ -9,7 +9,7 @@ const port = 5001
 app.use(express.json());
 
 app.use('/api/auth',require('./routes/Auth'))
-// app.use('/api/notes',require('./routes/notes'))
+app.use('/api/notes',require('./routes/notes'))
 
 
 app.listen(port, () => {
